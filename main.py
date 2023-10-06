@@ -10,11 +10,11 @@ def main():
     Main function
     :return: None
     """
-    personA = Person("Fabian", 22)
-    personB = Person("Lea", 27)
+    person_a = Person("Fabian", 22)
+    person_b = Person("Lea", 27)
 
-    print(personA.get_person())
-    print(personB.get_person())
+    print(person_a.get_person())
+    print(person_b.get_person())
 
 
 if __name__ == '__main__':
