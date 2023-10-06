@@ -1,3 +1,4 @@
 # IDE shit
 .idea
 venv
+__pycache__

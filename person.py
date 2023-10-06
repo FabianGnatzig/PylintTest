@@ -9,20 +9,29 @@ class Person:
     Class for a person.
     """
 
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int):
         self._name = name
         self._age = age
 
-    def get_person(self):
+    def get_person(self) -> str:
         """
         Returns a string with name and age.
         :return: A person string.
         """
         return f"{self._name}, {self._age}"
 
-    def get_age(self):
+    @property
+    def name(self) -> str:
         """
-        Returns the age.
-        :return: The age.
+        Returns the name property.
+        :return: The name property.
+        """
+        return self._name
+
+    @property
+    def age(self) -> int:
+        """
+        Returns the age property.
+        :return: The age property.
         """
         return self._age
