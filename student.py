@@ -7,14 +7,15 @@ from person import Person
 
 class student(Person):
 
-    def __init__(self, name, age, matrNr):
+    def __init__(self, name, age, matr_nr):
         super().__init__(name, age)
 
-        self._matrNr = matrNr
+        self._matr_nr = matr_nr
 
 
     def get_person(self) -> str:
-        return f"Der Student mit dem Namen {self._name} ist {self._age} Jahre alt und besitzt die Matrikelnummer: {self._matrNr}"
+        return f"Name: {self._name}; Alter: {self._age}; Matrikelnummer: {self._matr_nr};"
+
     @property
-    def matrNr(self):
-        return self._matrNr
+    def matr_Nr(self):
+        return self._matr_nr
