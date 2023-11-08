@@ -24,4 +24,7 @@ class Student(Person):
 
     @property
     def matr_nr(self):
+        """
+        Gibt matrnr aus
+        """
         return self._matr_nr
