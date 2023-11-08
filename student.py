@@ -6,9 +6,9 @@ from person import Person
 
 
 class Student(Person):
-"""
-Klasse Student
-"""
+    """
+    Klasse Student
+    """
 
     def __init__(self, name, age, matr_nr):
         super().__init__(name, age)
