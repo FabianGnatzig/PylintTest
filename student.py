@@ -5,7 +5,10 @@ Contact: fabiangnatzig@gmx.de
 from person import Person
 
 
-class student(Person):
+class Student(Person):
+"""
+Klasse Student
+"""
 
     def __init__(self, name, age, matr_nr):
         super().__init__(name, age)
@@ -14,8 +17,11 @@ class student(Person):
 
 
     def get_person(self) -> str:
+        """
+        Gibt Personen string aus
+        """
         return f"Name: {self._name}; Alter: {self._age}; Matrikelnummer: {self._matr_nr};"
 
     @property
-    def matr_Nr(self):
+    def matr_nr(self):
         return self._matr_nr
